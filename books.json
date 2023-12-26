@@ -1,0 +1,36 @@
+{
+  "books": {
+    "person": [
+      {
+        "age": 27,
+        "gender": "male",
+        "id": 1,
+        "name": "john"
+      },
+      {
+        "age": 32,
+        "gender": "male",
+        "id": 2,
+        "name": "Smith"
+      },
+      {
+        "age": 23,
+        "gender": "female",
+        "id": 3,
+        "name": "Sunita Williams"
+      },
+      {
+        "id": 4,
+        "name": "Alice",
+        "age": 25,
+        "gender": "female"
+      },
+      {
+        "id": 5,
+        "name": "monika",
+        "age": 23,
+        "gender": "female"
+      }
+    ]
+  }
+}

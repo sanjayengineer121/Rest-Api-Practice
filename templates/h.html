@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API Framework</title>
+</head>
+<body>
+    <h1>REST API Framework for Test</h1>
+    <p>When you go to the home page ("/"), you will get information about REST API calling.</p>
+    
+    <h2>Endpoints:</h2>
+    
+    <p><strong>/persons:</strong> Returns all information in a table with tabular output in the CLI.</p>
+    <p><strong>/api/books/person:</strong> Returns user information in REST API format.</p>
+    <p><strong>/api/books/person/&lt;int:id&gt;:</strong> Returns specific user information based on the provided ID.</p>
+    
+    <h3>Posting User Information:</h3>
+    <p><strong>/api/books/person (POST):</strong> Allows posting user information in JSON format.</p>
+    <pre>
+        {
+            "name": "monika",
+            "age": 23,
+            "gender": "female"
+        }
+    </pre>
+    
+    <h3>Updating User Information:</h3>
+    <p><strong>/api/books/person/&lt;int:id&gt; (PUT):</strong> Updates information for a specific user identified by the provided ID. Example curl command:</p>
+    <pre>
+        curl -X PUT -H "Content-Type: application/json" -d "{\"id\": 1, \"title\": \"Updated Title\", \"author\": \"Updated Author\"}" http://127.0.0.1:5000/api/books/persons
+    </pre>
+    
+    <h3>Deleting Specific User Information:</h3>
+    <p><strong>/api/books/person/&lt;int:id&gt; (DELETE):</strong> Deletes information for a specific user identified by the provided ID.</p>
+</body>
+</html>
